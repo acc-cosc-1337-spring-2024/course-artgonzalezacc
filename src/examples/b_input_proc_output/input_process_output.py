@@ -38,3 +38,7 @@ def power_function(val1, exponent):
     result = val1 ** exponent
     return result
 
+def get_remainder(val1, val2):
+    result = val1 % val2
+    return result
+
