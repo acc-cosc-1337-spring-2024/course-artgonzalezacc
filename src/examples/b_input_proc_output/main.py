@@ -1,15 +1,15 @@
 import input_process_output
 
-value = input("Enter value: ")
-result = input_process_output.add_values(value, value) #treats the value variable as a string
+val1 = input("Enter value 1: ")
+val2 = input("Enter value 2:")
+
+result = input_process_output.floating_point_division(int(val1), int(val2))
+
 print(result)
 
+val1 = input("Enter value 1: ")
+val2 = input("Enter value 2:")
 
-value = input("Enter value: ") #reads values from keyboard as string(alphanumeric)
-result = input_process_output.add_values(int(value), int(value)) #convert alpha to int(whole number) or float(decimal number)
+result = input_process_output.integer_division(int(val1), int(val2))
+
 print(result)
-
-value = input("Enter value: ") #reads values from keyboard as string(alphanumeric)
-result = input_process_output.add_values(float(value), float(value)) #convert alpha to int(whole number) or float(decimal number)
-print(result)
-
