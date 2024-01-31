@@ -1,6 +1,7 @@
 import unittest
 
-from src.examples.b_input_proc_output.input_process_output import add_values, floating_point_division, integer_division, operator_precedence_1, operator_precedence_2, test_config
+from src.examples.b_input_proc_output.input_process_output import add_values, floating_point_division, integer_division, operator_precedence_1, \
+operator_precedence_2, power_function, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -30,3 +31,11 @@ class Test_Config(unittest.TestCase):
 
     def test_operator_precedence_2(self):
         self.assertEqual(operator_precedence_2(12, 6, 3), 6)
+
+    def test_power_function_squared(self):
+        self.assertEqual(power_function(2, 2), 4)
+        self.assertEqual(power_function(8, 2), 64)
+
+    def test_power_function_cubed(self):
+        self.assertEqual(power_function(2, 3), 8)
+        self.assertEqual(power_function(3, 3), 27)
