@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.b_input_proc_output.input_process_output import add_values, floating_point_division, integer_division, test_config
+from src.examples.b_input_proc_output.input_process_output import add_values, floating_point_division, integer_division, operator_precedence_1, operator_precedence_2, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -25,3 +25,8 @@ class Test_Config(unittest.TestCase):
     def test_integer_division_2(self):
         self.assertEqual(integer_division(5, 2), 2)
 
+    def test_operator_precedence_1(self):
+        self.assertEqual(operator_precedence_1(12, 6, 3), 14)
+
+    def test_operator_precedence_2(self):
+        self.assertEqual(operator_precedence_2(12, 6, 3), 6)

@@ -1,15 +1,13 @@
 import input_process_output
 
-val1 = input("Enter value 1: ")
-val2 = input("Enter value 2:")
+val1 = int(input("Enter value 1: "))
+val2 = int(input("Enter value 2: "))
+val3 = int(input("Enter value 3: "))
 
-result = input_process_output.floating_point_division(int(val1), int(val2))
+result = input_process_output.operator_precedence_1(val1, val2, val3)
 
 print(result)
 
-val1 = input("Enter value 1: ")
-val2 = input("Enter value 2:")
-
-result = input_process_output.integer_division(int(val1), int(val2))
+result = input_process_output.operator_precedence_2(val1, val2, val3)
 
 print(result)
