@@ -18,3 +18,7 @@ def add_values(num1, num2):
 
     return result
 
+def floating_point_division(val1, val2):
+    result = val1 / val2
+    return result
+
