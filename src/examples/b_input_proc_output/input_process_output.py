@@ -22,3 +22,7 @@ def floating_point_division(val1, val2):
     result = val1 / val2
     return result
 
+def integer_division(val1, val2):
+    result = val1 // val2
+    return result
+
