@@ -1,14 +1,10 @@
 import decisions
 
-result = decisions.get_and_result(False, True)
+num = int(input("Enter a number: "))
+result = decisions.is_even(num)
 
-print(result)
+print("Even ", result)
 
-result = decisions.get_or_result(True, False)
+result = decisions.is_odd(num)
 
-print(result)
-
-result = decisions.get_not_result(False)
-
-print(result)
-
+print("Odd ", result)
