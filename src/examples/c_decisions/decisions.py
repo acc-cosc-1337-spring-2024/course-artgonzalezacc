@@ -25,3 +25,6 @@ def is_vowel(letter):
     result = letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u'
 
     return result
+
+def is_overtime(hours):
+    return hours > 40

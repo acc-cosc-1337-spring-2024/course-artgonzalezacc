@@ -1,16 +1,13 @@
 import decisions
 
 num = int(input("Enter a number: "))
-result = decisions.is_even(num)
 
-if(result == True):
-    print("Even ", result)
+overtime = decisions.is_overtime(num)
+
+print(overtime)
+
+if(overtime):
+    print("You earned overtime.")
 else:
-    print("Number is not Even")
+    print("No overtime.")
 
-result = decisions.is_odd(num)
-
-if(result == True):
-    print("Odd ", result)
-else:
-    print("Number is not Odd")

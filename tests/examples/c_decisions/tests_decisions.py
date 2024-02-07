@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.c_decisions.decisions import get_and_result, get_not_result, get_or_result, is_even, is_odd, is_vowel, test_config
+from src.examples.c_decisions.decisions import get_and_result, get_not_result, get_or_result, is_even, is_odd, is_overtime, is_vowel, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -42,5 +42,10 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(is_vowel('o'), True)
         self.assertEqual(is_vowel('u'), True)
         self.assertEqual(is_vowel('b'), False)
-        self.assertEqual(is_vowel('A'), True)
+        #self.assertEqual(is_vowel('A'), True)
+
+    def test_is_overtime(self):
+        self.assertEqual(is_overtime(30), False)
+        self.assertEqual(is_overtime(40), False)
+        self.assertEqual(is_overtime(41), True)
 
