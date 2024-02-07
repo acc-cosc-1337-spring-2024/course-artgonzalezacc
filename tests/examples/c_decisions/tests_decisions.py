@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.c_decisions.decisions import get_and_result, get_not_result, get_or_result, is_even, is_odd, is_overtime, is_vowel, test_config
+from src.examples.c_decisions.decisions import get_and_result, get_generation, get_not_result, get_or_result, is_even, is_odd, is_overtime, is_vowel, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -49,3 +49,11 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(is_overtime(40), False)
         self.assertEqual(is_overtime(41), True)
 
+    def test_get_generation(self):
+        self.assertEqual(get_generation(2030), 'Invalid Option')
+        self.assertEqual(get_generation(1997), "Centennial")
+        self.assertEqual(get_generation(1980), "Millennial")
+        self.assertEqual(get_generation(1970), "Generation X")
+        self.assertEqual(get_generation(1950), 'Baby Boomer')
+        self.assertEqual(get_generation(1930), 'Silent Generation')
+        self.assertEqual(get_generation(1900), 'Invalid Option')

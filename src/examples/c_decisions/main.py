@@ -1,13 +1,7 @@
 import decisions
 
-num = int(input("Enter a number: "))
+year = int(input("Enter a year: "))
 
-overtime = decisions.is_overtime(num)
+generation = decisions.get_generation(year)
 
-print(overtime)
-
-if(overtime):
-    print("You earned overtime.")
-else:
-    print("No overtime.")
-
+print(year, " is ", generation)
