@@ -25,5 +25,23 @@ def prompt_user():
 
     while keep_going == 'y' or keep_going == 'Y':
         keep_going = input('Loop again, type y or Y? ')
-        
 
+def display_number_for(num):
+    for val in range(1, num+1) :#val is a target variable
+        print(val)
+
+def sum_of_squares_for(num):
+    sum = 0
+
+    for val in range(1, num + 1):
+        sum = sum + val * val
+
+    return sum
+
+def loop_a_list():
+    for num in [1,2,3,4,5]:
+        print(num)
+
+def loop_a_word_list():
+    for word in ["C", "C++", "Java", "Python"]:
+        print(word)
