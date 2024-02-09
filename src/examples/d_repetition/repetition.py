@@ -45,3 +45,14 @@ def loop_a_list():
 def loop_a_word_list():
     for word in ["C", "C++", "Java", "Python"]:
         print(word)
+
+def sum_of_squares_user_controlled():
+    keep_going = 'y'
+
+    while keep_going == 'y' or keep_going == 'Y':
+        val = int(input('Enter a number: '))
+        result = sum_of_squares(val)
+
+        print(result)
+
+        keep_going = input('To continue, enter y or Y: ')
