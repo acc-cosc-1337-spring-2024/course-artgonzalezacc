@@ -56,3 +56,16 @@ def sum_of_squares_user_controlled():
         print(result)
 
         keep_going = input('To continue, enter y or Y: ')
+
+def for_num_range_w_step_value(num1, num2, step):
+
+    for n in range(num1, num2+1, step):
+        print(n)
+
+def get_sum__for(num): # 3 ---> 1 + 2 + 3 = 6
+    sum = 0
+
+    for n in range(num): 
+        sum += n + 1 #is the same as sum = sum + n + 1
+    
+    return sum

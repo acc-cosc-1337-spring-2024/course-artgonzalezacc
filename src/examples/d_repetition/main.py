@@ -1,3 +1,3 @@
 import repetition
 
-repetition.sum_of_squares_user_controlled()
+repetition.for_num_range_w_step_value(1, 10, 2)
