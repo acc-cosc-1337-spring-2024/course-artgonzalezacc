@@ -69,3 +69,29 @@ def get_sum__for(num): # 3 ---> 1 + 2 + 3 = 6
         sum += n + 1 #is the same as sum = sum + n + 1
     
     return sum
+
+def while_validate_user_input():
+    lot_number = -1
+
+    while(lot_number != 0):
+        lot_number = input("Enter number from 1-10 or 0 to exit: ")
+
+        if(lot_number.isnumeric()):
+            lot_number = int(lot_number) #lot_number is a valid number, convert it to int(while number )
+
+            if(lot_number != 0):
+            
+                while(not(lot_number >= 1 and lot_number <= 10)):
+                    lot_number = int(input("Number not in range, please enter number from 1-10 or 0 to exit: "))
+
+                print("Valid number entered ", lot_number)
+
+            else:
+                print("Program will exit")
+        
+        else:
+            print("Value is not a number, please try again.")
+
+
+    print('Exiting...')
+
