@@ -95,3 +95,30 @@ def while_validate_user_input():
 
     print('Exiting...')
 
+def nested_while_loop(row, col):
+
+    i = 0
+
+    while(i < row):
+        print("i:", i , "outer loop - wait for inner loop")
+        i += 1
+        j = 0
+
+        while(j < col):
+            print("j:", j, "\t inner loop -maker outer loop wait")
+            j += 1
+
+def while_multiplication_table(row, col):
+    r = 0
+
+    while r < row:    
+        c = 0
+
+        while c < col:
+            product = (r + 1) * (c + 1)
+            print(str(product).rjust(3, " "), end=" ")
+            c += 1
+        
+        r += 1
+
+        print(" ")

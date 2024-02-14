@@ -1,3 +1,4 @@
 import repetition
 
-repetition.while_validate_user_input()
+#repetition.nested_while_loop(3, 3)
+repetition.while_multiplication_table(10, 10)
