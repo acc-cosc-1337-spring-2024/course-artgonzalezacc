@@ -20,3 +20,4 @@ def loop_string_w_for(str):
         print(ch)
     
     print(str)
+
