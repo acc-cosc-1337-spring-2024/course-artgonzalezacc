@@ -12,3 +12,11 @@ def loop_string_w_for_range(str):
     size = len(str)
     for index in range(0, size):
         print(str[index])
+
+def loop_string_w_for(str):
+
+    for ch in str:
+        ch = '9'
+        print(ch)
+    
+    print(str)
