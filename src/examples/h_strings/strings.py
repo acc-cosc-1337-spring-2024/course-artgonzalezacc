@@ -15,3 +15,18 @@ def string_return_value(lang):
     lang = "Python"
     return lang
 
+def get_length_of_string(str):
+    return len(str)
+
+def get_number_of_ch_in_string(str, ch):
+    index = 0
+    count = 0
+
+    while index < len(str):
+        if str[index] == ch:
+            count += 1
+        
+        index += 1 
+
+    return count
+

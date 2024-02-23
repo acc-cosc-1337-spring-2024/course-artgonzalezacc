@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.h_strings.strings import concat_string, concat_string_w_plus_equal, string_params, string_return_value, test_config
+from src.examples.h_strings.strings import concat_string, concat_string_w_plus_equal, get_length_of_string, get_number_of_ch_in_string, string_params, string_return_value, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -33,5 +33,15 @@ class Test_Config(unittest.TestCase):
         text = "Four score and seven years ago"
         is_in = 'Seven' in text
         self.assertEqual(is_in, False)
-        
 
+    def test_get_length_w_len(self):
+        lang = "Python"
+        length = get_length_of_string(lang)
+
+        self.assertEqual(length, 6)
+        
+    def test_get_number_of_ch_in_string(self):
+        text = "Python"
+        count = get_number_of_ch_in_string(text, 't')
+
+        self.assertEqual(count, 1)
