@@ -10,3 +10,7 @@ def concat_string_w_plus_equal(str1, str2):
 
 def string_params(str):
     str = "Python"
+
+def string_return_value(lang):
+    lang = "Python"
+    return lang

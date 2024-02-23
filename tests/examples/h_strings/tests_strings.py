@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.h_strings.strings import concat_string, concat_string_w_plus_equal, string_params, test_config
+from src.examples.h_strings.strings import concat_string, concat_string_w_plus_equal, string_params, string_return_value, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -17,5 +17,10 @@ class Test_Config(unittest.TestCase):
         lang = "C++"
         string_params(lang)
         self.assertEqual(lang, "C++")
+    
+    def test_string_return_value(self):
+        lang = "C++"
+        lang = string_return_value(lang) #lang is overwritten with the value of C++, 
+        self.assertEqual(lang, "Python")
         
 
