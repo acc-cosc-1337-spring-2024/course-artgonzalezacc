@@ -22,5 +22,16 @@ class Test_Config(unittest.TestCase):
         lang = "C++"
         lang = string_return_value(lang) #lang is overwritten with the value of C++, 
         self.assertEqual(lang, "Python")
+
+    def test_string_in_keyword(self):
+        text = "Four score and seven years ago"
+        is_in = 'seven' in text
+
+        self.assertEqual(is_in, True)
+
+    def test_string_in_keyword_2(self):
+        text = "Four score and seven years ago"
+        is_in = 'Seven' in text
+        self.assertEqual(is_in, False)
         
 
