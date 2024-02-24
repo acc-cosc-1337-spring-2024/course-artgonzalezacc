@@ -45,3 +45,48 @@ class Test_Config(unittest.TestCase):
         count = get_number_of_ch_in_string(text, 't')
 
         self.assertEqual(count, 1)
+
+    def test_string_isalnum(self):
+        text = "C++"
+        self.assertEqual(text.isalnum(), False)
+
+    def test_string_isdigit(self):
+        val = "123"
+        self.assertEqual(val.isdigit(), True)
+
+    def test_string_isupper(self):
+        val = "PYTHON"
+        self.assertEqual(val.isupper(), True)
+
+    def test_string_to_lower(self):
+        val = "PYTHON"
+        val = val.lower()
+        self.assertEqual(val, "python")
+
+    def test_string_rstrip(self):
+        val = "Python  "
+        val = val.rstrip()
+
+        self.assertEqual(val, "Python")
+
+    def test_string_endswith(self):
+        val = "file.txt"
+
+        self.assertEqual(val.endswith('.txt'), True)
+
+    def test_string_replace(self):
+        val = "Python"
+        val = val.replace('Py', 'pi')
+        self.assertEqual(val, 'pithon')
+
+    def test_string_repetition_operator(self):
+        val = 'w' * 5
+        self.assertEqual(val, 'wwwww')
+
+    def test_split_string(self):
+        text = "Four score and seven years ago"
+        split_text = text.split()
+
+        self.assertEqual(split_text, ['Four', 'score', 'and', 'seven', 'years', 'ago'])
+
+

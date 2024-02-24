@@ -1,4 +1,8 @@
 #main program
-str1 = "C++"
-str1 = str1 + " cosc 1337" #new string is created in memory
+val = 'w' * 5
+print(val)
 
+text = "Four score and seven years ago"
+split_text = text.split()
+
+print(split_text)
