@@ -25,3 +25,9 @@ def display_list_for(list1):
     for list_item in list1:
         print(list_item)
 
+def list_parameter(list1):
+    list1[0] = 0
+
+def list_parameter_return(list1):
+    list1[0] = 0
+    return list1
