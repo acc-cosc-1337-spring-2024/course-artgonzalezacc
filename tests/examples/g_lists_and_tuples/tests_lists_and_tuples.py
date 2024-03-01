@@ -67,3 +67,9 @@ class Test_Config(unittest.TestCase):
         nums.sort()
 
         self.assertEqual(nums, [0,1,2,3,4,5,6,7,8,9])
+
+    def test_list_remove_item(self):
+        nums = [9,1,0,2,8,5,7,4,3,6]
+        nums.remove(5)
+
+        self.assertEqual(nums, [9,1,0,2,8,7,4,3,6])
