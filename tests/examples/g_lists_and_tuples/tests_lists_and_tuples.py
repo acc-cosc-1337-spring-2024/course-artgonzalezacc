@@ -56,4 +56,8 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(index, 3)
         self.assertEqual(names[index], "Python")
 
-    
+    def test_insert_into_list(self):
+        names = ["C++", "C#", "Java", "Python"]
+        names.insert(0, "C")
+
+        self.assertEqual(names, ["C", "C++", "C#", "Java", "Python"])
