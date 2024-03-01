@@ -80,4 +80,8 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(names, ["C++", "Java", "Python"])
 
-    
+    def test_get_min_value_from_list(self):
+        nums = [9,1,0,2,8,5,7,4,3,6]
+        min_value = min(nums)
+
+        self.assertEqual(min_value, 0)
