@@ -1,23 +1,8 @@
 #main program
 import lists
 
-names = []
-option = "Y"
+nums = [9,1,0,2,8,5,7,4,3,6]
+nums.sort()
 
-while option.upper() == 'Y':
-
-    item = input("Enter name: ")
-
-    names.append(item)
-    option = input("Enter y to continue ")
-
-for name in names:
-    print(name)
-
-item = input("Enter name: ")
-index = names.index(item)
-
-names[index] = "Modified"
-
-for name in names:
-    print(name)
+for num in nums: 
+    print(num)

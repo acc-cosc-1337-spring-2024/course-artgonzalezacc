@@ -61,3 +61,9 @@ class Test_Config(unittest.TestCase):
         names.insert(0, "C")
 
         self.assertEqual(names, ["C", "C++", "C#", "Java", "Python"])
+
+    def test_list_sort(self):
+        nums = [9,1,0,2,8,5,7,4,3,6]
+        nums.sort()
+
+        self.assertEqual(nums, [0,1,2,3,4,5,6,7,8,9])
