@@ -43,3 +43,8 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(result, False)
 
+    def test_append_item_to_list(self):
+        names = []
+        names.append("Python")
+
+        self.assertEqual(names, ["Python"])

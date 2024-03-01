@@ -1,13 +1,15 @@
 #main program
 import lists
 
-prods = ["V475", "F987", "Q143", "R688"]
+names = []
+option = "Y"
 
-item = input("Enter item number: ")
+while option.upper() == 'Y':
 
-result = lists.find_item_in_list(item, prods)
+    item = input("Enter name: ")
 
-if(result):
-    print("Item found")
-else:
-    print("Item not in list")
+    names.append(item)
+    option = input("Enter y to continue ")
+
+for name in names:
+    print(name)
