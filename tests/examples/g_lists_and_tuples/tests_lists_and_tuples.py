@@ -73,3 +73,11 @@ class Test_Config(unittest.TestCase):
         nums.remove(5)
 
         self.assertEqual(nums, [9,1,0,2,8,7,4,3,6])
+
+    def test_list_del_item(self):
+        names = ["C++", "C#", "Java", "Python"]
+        del names[1]
+
+        self.assertEqual(names, ["C++", "Java", "Python"])
+
+    
