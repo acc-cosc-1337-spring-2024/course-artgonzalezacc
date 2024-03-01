@@ -1,11 +1,13 @@
 #main program
 import lists
 
-even_numbers = [2,4,6,8,10]
-print(even_numbers)
+prods = ["V475", "F987", "Q143", "R688"]
 
-#lists.list_parameter(even_numbers)
-lists.list_parameter_return(even_numbers)
+item = input("Enter item number: ")
 
-print(even_numbers)
+result = lists.find_item_in_list(item, prods)
 
+if(result):
+    print("Item found")
+else:
+    print("Item not in list")

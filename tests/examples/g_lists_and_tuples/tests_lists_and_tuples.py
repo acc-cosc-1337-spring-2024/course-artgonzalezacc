@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.g_lists_and_tuples.lists import list_parameter, list_parameter_return, test_config
+from src.examples.g_lists_and_tuples.lists import find_item_in_list, list_parameter, list_parameter_return, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -30,4 +30,16 @@ class Test_Config(unittest.TestCase):
         return_list = list_parameter_return(even_numbers)
 
         self.assertEqual(return_list, even_numbers)
+
+    def test_find_item_in_list(self):
+        prods = ["V475", "F987", "Q143", "R688"]
+        result = find_item_in_list("Q143", prods)
+
+        self.assertEqual(result, True)
+
+    def test_find_item_not_in_list(self):
+        prods = ["V475", "F987", "Q143", "R688"]
+        result = find_item_in_list("q143", prods)
+
+        self.assertEqual(result, False)
 
