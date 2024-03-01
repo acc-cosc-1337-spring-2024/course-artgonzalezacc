@@ -13,3 +13,11 @@ while option.upper() == 'Y':
 
 for name in names:
     print(name)
+
+item = input("Enter name: ")
+index = names.index(item)
+
+names[index] = "Modified"
+
+for name in names:
+    print(name)

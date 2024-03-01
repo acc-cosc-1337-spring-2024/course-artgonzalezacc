@@ -48,3 +48,12 @@ class Test_Config(unittest.TestCase):
         names.append("Python")
 
         self.assertEqual(names, ["Python"])
+
+    def test_get_list_index(self):
+        names = ["C++", "C#", "Java", "Python"]
+        index = names.index("Python")
+
+        self.assertEqual(index, 3)
+        self.assertEqual(names[index], "Python")
+
+    
