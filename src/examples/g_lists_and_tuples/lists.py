@@ -58,3 +58,20 @@ def copy_lists_manually():
     list2[0] = -1
     print(list1)
     print(list2)
+
+def two_dimensional_list():
+    students = [['Joe', 'Kim'],['Sam', 'Sue'],['Kelly', 'Chris']]
+    print(students[0])
+    print(students[1])
+    print(students[2])
+
+    print('Select one name')
+
+    print(students[1][1])
+    print(students[2][0])
+
+    print('use loop to display')
+
+    for i in range(0, len(students)):
+        for j in range(0, len(students[i])):
+            print(students[i][j])
