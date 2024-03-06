@@ -35,3 +35,26 @@ def list_parameter_return(list1):
 def find_item_in_list(item, list1):
     result = item in list1
     return result
+
+def copy_lists():
+    list1 = [1,2,3,4]
+    print(list1)
+
+    list2 = list1
+    list2[0] = -1
+
+    print(list1)
+    print(list2)
+
+def copy_lists_manually():
+    list1 = [1,2,3,4]
+    list2 = []
+
+    print(list1)
+
+    for num in list1:
+        list2.append(num)
+
+    list2[0] = -1
+    print(list1)
+    print(list2)
