@@ -7,4 +7,12 @@ def create_dictionary():
     print(prog_langs['C#'])
     #print(prog_langs['c++'])--generates a KeyError; c++ key doesn't exist in the dictionary
 
+def find_key_in_dictionary_with_in(key, prog_langs):
+    
+    if key in prog_langs:
+        print(prog_langs[key])
+    else:
+        print(key, "key not in dictionary")
+
+
 
