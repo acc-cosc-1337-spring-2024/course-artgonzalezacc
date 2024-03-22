@@ -37,5 +37,10 @@ class Test_Config(unittest.TestCase):
         prog_langs['c++'] = '1980'
         self.assertEqual(prog_langs['C++'], '1979')
         self.assertEqual(prog_langs['c++'], '1980')
+    
+    def test_delete_key_pair_from_dictionary(self):
+        prog_langs = {'C++':'1979', 'Java':'1992', 'Python':'1996', 'C#':'2001'}
+        del prog_langs['C#'] 
+        self.assertEqual(prog_langs, {'C++':'1979', 'Java':'1992', 'Python':'1996'})
 
 
