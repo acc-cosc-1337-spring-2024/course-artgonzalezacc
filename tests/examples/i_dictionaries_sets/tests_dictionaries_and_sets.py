@@ -21,3 +21,21 @@ class Test_Config(unittest.TestCase):
         self.assertEqual('C++' not in prog_langs, False)
         self.assertEqual('c++' not in prog_langs, True)
 
+    def test_add_key_pair_to_dictionary(self):
+        prog_langs = {}
+        prog_langs['Python'] = '1996'
+
+        self.assertEqual(prog_langs['Python'], '1996')
+
+    def test_add_duplicate_key_pair_to_dictionary_overwrites_existing_key_value(self):
+        prog_langs = {'C++':'1979'}
+        prog_langs['C++'] = '1980'
+        self.assertEqual(prog_langs['C++'], '1980')
+
+    def test_add_key_pair_to_dictionary_key_case_sensitive(self):
+        prog_langs = {'C++':'1979'}
+        prog_langs['c++'] = '1980'
+        self.assertEqual(prog_langs['C++'], '1979')
+        self.assertEqual(prog_langs['c++'], '1980')
+
+
