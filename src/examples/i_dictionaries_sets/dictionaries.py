@@ -20,6 +20,9 @@ def find_key_dictionary_with_not_in(key, prog_langs):
         print(key, "key not in dictionary")
     else:
         print(prog_langs[key])
+
+def add_key_pair_to_dictionary(key, value, prog_langs):
+    prog_langs[key] = value
         
 
 
