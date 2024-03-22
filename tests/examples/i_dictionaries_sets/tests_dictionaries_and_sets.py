@@ -43,4 +43,23 @@ class Test_Config(unittest.TestCase):
         del prog_langs['C#'] 
         self.assertEqual(prog_langs, {'C++':'1979', 'Java':'1992', 'Python':'1996'})
 
+    def test_get_key_pair_count_in_dictionary(self):
+        prog_langs = {'C++':'1979', 'Java':'1992', 'Python':'1996', 'C#':'2001'}
+        count = len(prog_langs)
+
+        self.assertEqual(count, 4)
+
+    def test_add_mix_data_types_to_dictionary(self):
+        prog_langs = {'C++':1979.5, 'Java':'1992', 'Python':'1996', 'C#':2001}
+        self.assertEqual(prog_langs['C++'], 1979.5)
+        self.assertEqual(prog_langs['C#'], 2001)
+
+    def test_add_simple_and_list_data_types_to_dictionary(self):
+        prog_langs = {'C++':[1979, 1980, 1981, 1982, 1983], 'Java':'1992', 'Python':'1996', 'C#':2001}
+        cpp_value = prog_langs['C++']
+
+        self.assertEqual(cpp_value, [1979, 1980, 1981, 1982, 1983])
+
+    
+
 

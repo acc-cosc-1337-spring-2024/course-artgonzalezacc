@@ -31,13 +31,14 @@ def display_menu():
     print('1-Add key pair')
     print('2-Delete key pair')
     print('3-Display dictionary')
-    print('4-Exit')
+    print('4-Get key pair count')
+    print('5-Exit')
 
 def run_menu(prog_langs):
 
     choice = -1
 
-    while(choice != 4):
+    while(choice != 5):
         display_menu()
         choice = int(input("Enter choice: "))
         handle_menu_option(choice, prog_langs)
@@ -47,13 +48,20 @@ def handle_menu_option(choice, prog_langs):
         key = input("Enter key: ")
         value = input("Enter value: ")
         add_key_pair_to_dictionary(key, value, prog_langs)
+
     elif choice == 2:
         key = input("Enter key: ")
         delete_from_dictionary(key, prog_langs)
+
     elif choice == 3:
         print(prog_langs)
+
     elif choice == 4:
+        print(len(prog_langs))
+        
+    elif choice == 5:
         print('Exiting...')
+
     else:
         print('Invalid option')
 
