@@ -1,5 +1,21 @@
 #main program
 import dictionaries
 
-#dictionaries.use_get_dictionary_keys_in_loop()
-dictionaries.get_dictionary_values()
+
+myset = set(['a', 'b', 'c'])
+print(myset)
+
+myset = set()
+myset.add('a')
+myset.add('b')
+myset.add('c')
+
+
+print(myset)
+
+myset.remove('a')
+
+print(myset)
+
+myset = set(['one', 'two', 'three'])
+print(myset)
