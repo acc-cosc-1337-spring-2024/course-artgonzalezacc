@@ -75,6 +75,18 @@ class Test_Config(unittest.TestCase):
         value = prog_langs.get('C++', 'Key not found')
         self.assertEqual(value, '1979')
 
+    def test_create_dictionary_w_comprehensions(self):
+        numbers = [1, 2, 3, 4]
+        squares = {}
+        for number in numbers:
+            squares[number] = number**2
+
+        self.assertEqual(squares[1], 1)
+        self.assertEqual(squares[2], 4)
+        self.assertEqual(squares[3], 9)
+        self.assertEqual(squares[4], 16)
+
+
         
     
 
