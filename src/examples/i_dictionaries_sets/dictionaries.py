@@ -65,6 +65,11 @@ def handle_menu_option(choice, prog_langs):
     else:
         print('Invalid option')
 
+def loop_dictionary_with_for():
+    prog_langs = {'C++':'1979', 'Java':'1992', 'Python':'1996', 'C#':'2001'}
+    for current_key in prog_langs:
+        print(current_key, prog_langs[current_key])
+
         
 
 
