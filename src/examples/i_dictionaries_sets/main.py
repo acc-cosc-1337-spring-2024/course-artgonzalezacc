@@ -1,21 +1,13 @@
 #main program
 import dictionaries
 
+baseball = set(['Jodi', 'Carmen', 'Aida', 'Alicia'])
+basketball = set(['Eva', 'Carmen', 'Alicia', 'Sarah'])
 
-myset = set(['a', 'b', 'c'])
-print(myset)
+dictionaries.students_in_base_basket(baseball, basketball)
 
-myset = set()
-myset.add('a')
-myset.add('b')
-myset.add('c')
+dictionaries.students_in_base_not_basket(baseball, basketball)
 
+dictionaries.students_in_basket_not_base(baseball, basketball)
 
-print(myset)
-
-myset.remove('a')
-
-print(myset)
-
-myset = set(['one', 'two', 'three'])
-print(myset)
+dictionaries.students_play_only_one_sport(baseball, basketball)
